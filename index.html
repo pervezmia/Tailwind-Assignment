@@ -485,7 +485,14 @@
 
 
 
-    <script src="index.js"></script>
+    <script src="index.js">
+        const htmltag = document.querySelector("#htmltag");
+        const toggle = document.querySelector("#toggle");
+
+        toggle.addEventListener("click",()=>{
+            htmltag.classList.toggle("dark");
+        });
+    </script>
 
    
 </body>
